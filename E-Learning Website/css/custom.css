@@ -1,0 +1,35 @@
+/* Your custom css code goes here */
+.navbar{
+    background-color: rgb(221, 15, 15);
+    
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  /* no flexbox by default... */
+  .col{
+      background-color: cornsilk;
+      padding: 2px;
+      justify-content: space-between;
+      margin: 40px;
+      margin-left: 15px;
+      border-radius: 25px;
+      padding: 20px;
+  }
+  .h2{
+      font-family: sans-serif;
+      font-weight: bolder;
+  }
+  
+  @media(min-width: 768px) {
+    /* when the screen is 768px or wider,
+    turn it into a flexbox */
+    .row {
+      display: flex;
+    }
+    .col {
+      flex-grow: 1;
+    }  
+  }
+  
